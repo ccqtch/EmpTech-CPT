@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#site-header {
+  background-color: #2f3590;  /* a bold, attention-grabbing header color */
+  color: #ffffff;             /* white text for contrast */
+  padding: 30px;
+  text-align: center;
+  font-family: trajan pro, regular; /* a strong, professional font for the header */
+}
+body h5 {
+  font-family: trajan pro, light; /* a slightly friendlier
+                                                       font just for headings */
+  color: #e8e4c9;
+  padding: 0 10px;
+}
+#about-sdg2 {
+    background-color: #e8e4c9;  /* a light, neutral background for the section */
+    color: #2f3590;             /* dark text for contrast */
+    padding: 40px 20px;
+    text-align: justify;
+    width: 350px;
+    height: 375px;
+    border-radius: 10px;
+    transform: translatex(50px);
+}
+#about-sdg2 h1 {
+    font-family: garamond, regular; /* a classic, elegant font for the section title */
+    color: #2f3590;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#about-sdg2 p {
+    font-family: garamond, light; /* a classic, elegant font for the section text */
+    line-height: 1.6;
+}
+
