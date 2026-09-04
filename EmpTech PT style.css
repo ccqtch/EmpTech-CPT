@@ -31,6 +31,8 @@ body h5 {
     color: #2f3590;
     margin-bottom: 20px;
     text-align: center;
+    transform: translatey(-20px);
+    margin-bottom: -10px;
 }
 #about-sdg2 p {
     font-family: garamond, light; /* a classic, elegant font for the section text */
@@ -45,7 +47,7 @@ body h5 {
     width: 400px;
     height: 375px;
     border-radius: 10px;
-    transform: translate(425px, -375px);
+    transform: translate(415px, -375px);
     
     
 }
@@ -54,6 +56,8 @@ body h5 {
     color: #2f3590;
     margin-bottom: 10px;
     text-align: center;
+    transform: translatey(-20px);
+    margin-bottom: -10px;
 }
 #efforts p {
     font-family: garamond, light; /* a classic, elegant font for the section text */
@@ -63,11 +67,41 @@ body h5 {
 footer {
     font-size: 10px;
     padding: 0px;
-    margin-top: 20px;
+    margin-top: 55px;
+
 }
 #ft2 {
     font-size: 10px;
     padding: 0px;
-    margin-top: 5px;
+    margin-top: 30px;
 
+}
+
+#actions {
+    background-color: #e8e4c9;  /* a light, neutral background for the section */
+    color: #2f3590;             /* dark text for contrast */
+    padding: 40px 20px;
+    text-align: justify;
+    width: 350px;
+    height: 375px;
+    border-radius: 10px;
+    transform: translate(840px, -750px);
+}
+#actions h1 {
+    font-family: garamond, regular; /* a classic, elegant font for the section title */
+    color: #2f3590;
+    text-align: center;
+    transform: translatey(-20px);
+    margin-bottom: -10px;
+}
+#actions p {
+    font-family: garamond, light; /* a classic, elegant font for the section text */
+    line-height: 1.6;
+    padding-bottom: 0px;
+    margin-bottom: -15px;
+}
+#ft3 {
+    font-size: 10px;
+    padding: 0px;
+    margin-top: 20px;
 }
