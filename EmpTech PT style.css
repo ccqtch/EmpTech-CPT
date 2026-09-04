@@ -39,7 +39,7 @@ body h3 {
     line-height: 1.6;
 }
 
-#efforts {
+#cause-and-effects {
     background-color: #e8e4c9;  /* a light, neutral background for the section */
     color: #2f3590;             /* dark text for contrast */
     padding: 40px 20px;
@@ -51,7 +51,7 @@ body h3 {
     
     
 }
-#efforts h1 {
+#cause-and-effects h1 {
     font-family: garamond, regular; /* a classic, elegant font for the section title */
     color: #2f3590;
     margin-bottom: 10px;
@@ -59,7 +59,7 @@ body h3 {
     transform: translatey(-20px);
     margin-bottom: -10px;
 }
-#efforts p {
+#cause-and-effects p {
     font-family: garamond, light; /* a classic, elegant font for the section text */
     line-height: 1.6;
 }
@@ -74,10 +74,11 @@ footer {
     font-size: 10px;
     padding: 0px;
     margin-top: 30px;
+    transform: translatey(80px);
 
 }
 
-#actions {
+#data-visualization {
     background-color: #e8e4c9;  /* a light, neutral background for the section */
     color: #2f3590;             /* dark text for contrast */
     padding: 40px 20px;
@@ -87,14 +88,14 @@ footer {
     border-radius: 10px;
     transform: translate(90px, 40px);
 }
-#actions h1 {
+#data-visualization h1 {
     font-family: garamond, regular; /* a classic, elegant font for the section title */
     color: #2f3590;
     text-align: center;
     transform: translatey(-20px);
     margin-bottom: -10px;
 }
-#actions p {
+#data-visualization p {
     font-family: garamond, light; /* a classic, elegant font for the section text */
     line-height: 1.6;
     padding-bottom: 0px;
@@ -104,6 +105,7 @@ footer {
     font-size: 10px;
     padding: 0px;
     margin-top: 20px;
+    transform: translatey(300px);
 }
 .nav-list {
   display: flex;
@@ -149,8 +151,8 @@ footer {
 }
 
 .card-image img {
-  width: 100%;
-  height: auto;
+  min-width: 100%;
+  min-height: 200px;
   display: block;
 }
 
@@ -167,4 +169,18 @@ footer {
 
 .card-content.reverse {
   flex-direction: row-reverse;
+}
+#data-visualization .card-image{
+  min-height: 250px;
+  min-width: 250px;
+  display: inline-flex;
+  transform: translate(-220px, -10px);
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.wide-img {
+  width: 500px;
+  height: 310px;
+  flex-shrink: 0;
 }
