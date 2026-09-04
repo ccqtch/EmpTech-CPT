@@ -21,7 +21,7 @@ body h3 {
     color: #2f3590;             /* dark text for contrast */
     padding: 40px 20px;
     text-align: justify;
-    width: 350px;
+    width: 1100px;
     height: 375px;
     border-radius: 10px;
     transform: translatex(55px);
@@ -44,10 +44,10 @@ body h3 {
     color: #2f3590;             /* dark text for contrast */
     padding: 40px 20px;
     text-align: justify;
-    width: 400px;
+    width: 1100px;
     height: 375px;
     border-radius: 10px;
-    transform: translate(435px, -375px);
+    transform: translate(55px, 20px);
     
     
 }
@@ -67,7 +67,7 @@ body h3 {
 footer {
     font-size: 10px;
     padding: 0px;
-    margin-top: 55px;
+    margin-top: 110px;
 
 }
 #ft2 {
@@ -82,10 +82,10 @@ footer {
     color: #2f3590;             /* dark text for contrast */
     padding: 40px 20px;
     text-align: justify;
-    width: 350px;
+    width: 1100px;
     height: 375px;
     border-radius: 10px;
-    transform: translate(860px, -750px);
+    transform: translate(55px, 40px);
 }
 #actions h1 {
     font-family: garamond, regular; /* a classic, elegant font for the section title */
@@ -121,4 +121,50 @@ footer {
 
 .nav-list a:hover {
   text-decoration: underline; /* optional hover effect */
+}
+
+.card {
+  /* your existing styles stay the same */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card-image {
+  flex-shrink: 0;
+  width: 200px;
+  order: 2; 
+  
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card-text h1 {
+  text-align: left; /* since it's now in a narrower column, left often reads better than centered */
+}
+.card-text p {
+  text-align: justify; /* keeps the text neat and aligned on both sides */
+}
+
+.card-content.reverse {
+  flex-direction: row-reverse;
 }
