@@ -24,7 +24,7 @@ body h5 {
     width: 350px;
     height: 375px;
     border-radius: 10px;
-    transform: translatex(50px);
+    transform: translatex(35px);
 }
 #about-sdg2 h1 {
     font-family: garamond, regular; /* a classic, elegant font for the section title */
@@ -37,3 +37,37 @@ body h5 {
     line-height: 1.6;
 }
 
+#efforts {
+    background-color: #e8e4c9;  /* a light, neutral background for the section */
+    color: #2f3590;             /* dark text for contrast */
+    padding: 40px 20px;
+    text-align: justify;
+    width: 400px;
+    height: 375px;
+    border-radius: 10px;
+    transform: translate(425px, -375px);
+    
+    
+}
+#efforts h1 {
+    font-family: garamond, regular; /* a classic, elegant font for the section title */
+    color: #2f3590;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#efforts p {
+    font-family: garamond, light; /* a classic, elegant font for the section text */
+    line-height: 1.6;
+}
+    
+footer {
+    font-size: 10px;
+    padding: 0px;
+    margin-top: 20px;
+}
+#ft2 {
+    font-size: 10px;
+    padding: 0px;
+    margin-top: 5px;
+
+}
