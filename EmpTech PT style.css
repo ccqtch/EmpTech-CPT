@@ -141,7 +141,6 @@ footer {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  height: auto;
 }
 
 .card-image {
