@@ -1,4 +1,8 @@
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .hero {
   position: relative;
@@ -102,11 +106,4 @@
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
-}
-body {
-  transition: opacity 0.5s ease;
-}
-
-body.fade-out {
-  opacity: 0;
 }
