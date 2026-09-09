@@ -242,7 +242,7 @@ footer {
 #references {
   background-color: #2f3590;
   color: #e8e4c9;
-  padding: 10px 20px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -355,7 +355,7 @@ header.hero {
   position: absolute;
   top: 23px; /* sits just below the logo */
   width: 100%;
-  transform: translatex(-50px)
+  transform: translate(-100px, 50px)
 }
 
 
@@ -466,7 +466,7 @@ html {
 body {
   min-width: 0;
   overflow-x: hidden;
-  background-color: #2f3590;
+  background-color: #fffff0;
 }
 
 header.hero {
@@ -486,9 +486,20 @@ header.hero {
 }
 
 .hero-nav:last-of-type {
-  top: auto;
-  bottom: clamp(22px, 5vw, 60px);
-  transform: none;
+  top: 23px;
+  right: clamp(20px, 5vw, 60px);
+  left: clamp(110px, 12vw, 150px);
+  width: auto;
+  transform: translate(-100px, 30px);
+}
+
+.hero-nav:last-of-type .nav-list {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list {
@@ -516,6 +527,22 @@ header.hero {
 
 .card.visible {
   transform: translateY(0);
+}
+
+#about-sdg2.card.visible,
+#cause-and-effects.card.visible,
+#data-visualization.card.visible,
+#scientific-research.card.visible,
+#call-to-action.card.visible,
+#references.card.visible {
+  transform: translateY(0);
+}
+
+#references {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .card-content {
@@ -579,12 +606,12 @@ footer,
 }
 
 .sticky-nav .nav-list {
-  gap: 8px 28px;
+  gap: 8px 30px;
   padding: 0 20px;
 }
 
 .sticky-nav .nav-list li {
-  transform: none;
+  transform: translatey(15px);
 }
 
 @media (max-width: 700px) {
@@ -618,7 +645,18 @@ footer,
   }
 
   .hero-nav:last-of-type {
-    bottom: 22px;
+    top: 76px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+    transform: none;
+  }
+
+  .hero-nav:last-of-type .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px 16px;
+    padding: 0 20px;
   }
 
   .hero-nav:last-of-type .nav-list {
@@ -633,7 +671,7 @@ footer,
   #scientific-research,
   #call-to-action,
   #references {
-    width: calc(100% - 24px);
+    width: 100%;
     margin-top: 24px;
     padding: 24px 16px;
   }
