@@ -12,6 +12,17 @@ const observer = new IntersectionObserver((entries) => {
 
 cards.forEach(card => observer.observe(card));
 
+const header = document.querySelector('#site-header');
+let headerVisible = false;
+
+const headerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    headerVisible = entry.isIntersecting;
+  });
+}, { threshold: 0.5 }); // triggers once 50% of the header is on screen
+
+headerObserver.observe(header);
+
 let leaving = false;
 let upwardScrollAmount = 0;
 const THRESHOLD = 150;
@@ -19,11 +30,8 @@ const THRESHOLD = 150;
 window.addEventListener('wheel', (e) => {
   if (leaving) return;
 
-  const atTop = window.scrollY <= 20;
-
-  if (atTop && e.deltaY < 0) {
+  if (headerVisible && e.deltaY < 0) {
     upwardScrollAmount += Math.abs(e.deltaY);
-
     if (upwardScrollAmount >= THRESHOLD) {
       goToCover();
     }
