@@ -310,3 +310,10 @@ footer {
     margin-top: 20px;
     transform: translatey(90px);
 }
+body {
+  transition: opacity 0.5s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
