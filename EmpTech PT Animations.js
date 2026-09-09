@@ -12,7 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 
 cards.forEach(card => observer.observe(card));
 
-const header = document.querySelector('#site-header');
+const header = document.querySelector('#header');
 let headerVisible = false;
 
 const headerObserver = new IntersectionObserver((entries) => {
@@ -21,7 +21,9 @@ const headerObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 }); // triggers once 50% of the header is on screen
 
-headerObserver.observe(header);
+if (header) {
+  headerObserver.observe(header);
+}
 
 let leaving = false;
 let upwardScrollAmount = 0;
@@ -46,4 +48,20 @@ function goToCover() {
   setTimeout(() => {
     window.location.href = 'index.html';
   }, 500);
+}
+const stickyNav = document.querySelector('#sticky-nav');
+const heroSection = document.querySelector('#header'); // your hero's header id
+
+const heroObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      stickyNav.classList.add('visible');
+    } else {
+      stickyNav.classList.remove('visible');
+    }
+  });
+}, { threshold: 0 });
+
+if (stickyNav && heroSection) {
+  heroObserver.observe(heroSection);
 }

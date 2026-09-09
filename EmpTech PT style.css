@@ -426,3 +426,38 @@ html {
   height: 250px;
   transform: translatey(5px);
 }
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2f3590;
+  padding: 15px 0;
+  z-index: 1000;
+  transform: translateY(-100%); /* hidden above the viewport */
+  transition: transform 0.3s ease;
+}
+
+.sticky-nav.visible {
+  transform: translateY(0); /* slides into view */
+}
+
+.sticky-nav .nav-list {
+  justify-content: center;
+  gap: 70px;
+  margin: 0;
+}
+
+.sticky-nav .nav-list li {
+  display: inline-block;
+  transform: translatey(15px);
+}
+
+.sticky-nav a {
+  color: #e8e4c9;
+  font-size: 0.95rem;
+}
+
+.sticky-nav a:hover {
+  color: #ffffff;
+}
