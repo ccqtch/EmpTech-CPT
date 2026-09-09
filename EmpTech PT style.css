@@ -461,3 +461,238 @@ html {
 .sticky-nav a:hover {
   color: #ffffff;
 }
+
+/* Responsive layout */
+body {
+  min-width: 0;
+  overflow-x: hidden;
+  background-color: #2f3590;
+}
+
+header.hero {
+  min-height: 100svh;
+  height: auto;
+  padding: clamp(88px, 12vw, 150px) clamp(20px, 7vw, 90px) clamp(48px, 8vw, 90px);
+}
+
+.hero-content {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+.hero-nav:first-of-type {
+  top: clamp(18px, 4vw, 40px);
+  left: clamp(20px, 6vw, 60px);
+}
+
+.hero-nav:last-of-type {
+  top: auto;
+  bottom: clamp(22px, 5vw, 60px);
+  transform: none;
+}
+
+.nav-list {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card,
+#about-sdg2,
+#cause-and-effects,
+#data-visualization,
+#scientific-research,
+#call-to-action,
+#references {
+  width: min(1100px, calc(100% - 32px));
+  height: auto;
+  min-height: 0;
+  margin: 32px auto 0;
+  padding: clamp(24px, 4vw, 40px) clamp(18px, 4vw, 40px);
+  transform: translateY(40px);
+}
+
+.card.visible {
+  transform: translateY(0);
+}
+
+.card-content {
+  align-items: center;
+}
+
+.card-text {
+  min-width: 0;
+}
+
+.card-text p,
+.card-text dl,
+.card-text dd {
+  overflow-wrap: anywhere;
+}
+
+.card-image,
+#data-visualization .card-image {
+  width: min(200px, 30%);
+  min-width: 0;
+  min-height: 0;
+  transform: none;
+}
+
+.card-image img,
+.wide-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
+}
+
+#data-visualization .card-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+#data-visualization .card-content {
+  display: block;
+}
+
+#data-visualization .card-image img {
+  flex: 1 1 240px;
+  width: min(100%, 500px);
+}
+
+footer,
+#ft2,
+#ft3,
+#ft4,
+#ft5 {
+  margin-top: 24px;
+  transform: none;
+}
+
+.sticky-nav .nav-list {
+  gap: 8px 28px;
+  padding: 0 20px;
+}
+
+.sticky-nav .nav-list li {
+  transform: none;
+}
+
+@media (max-width: 700px) {
+  header.hero {
+    min-height: 100svh;
+    padding-top: 90px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .logo-gif img {
+    width: min(52vw, 220px);
+    height: auto;
+  }
+
+  .goal-text h1 {
+    font-size: clamp(2.6rem, 13vw, 4rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-credit,
+  .hero-names {
+    font-size: 0.9rem;
+  }
+
+  .hero-nav:last-of-type {
+    bottom: 22px;
+  }
+
+  .hero-nav:last-of-type .nav-list {
+    gap: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .card,
+  #about-sdg2,
+  #cause-and-effects,
+  #data-visualization,
+  #scientific-research,
+  #call-to-action,
+  #references {
+    width: calc(100% - 24px);
+    margin-top: 24px;
+    padding: 24px 16px;
+  }
+
+  .card-content,
+  .card-content.reverse {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .card-image,
+  #data-visualization .card-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-image img {
+    max-width: min(100%, 260px);
+  }
+
+  .card-text h1,
+  #about-sdg2 h1,
+  #cause-and-effects h1,
+  #data-visualization h1,
+  #scientific-research h1,
+  #call-to-action h1 {
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
+    line-height: 1.1;
+    transform: none;
+    margin-bottom: 16px;
+  }
+
+  .card-text p,
+  .card-text dl {
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .sticky-nav {
+    padding: 10px 0;
+  }
+
+  .sticky-nav .nav-list {
+    gap: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  #references h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
