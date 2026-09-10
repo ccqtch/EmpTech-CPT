@@ -747,6 +747,7 @@ header.hero {
 }
 
 #data-visualization .card-image img {
+  flex: 1 1 240px;
   width: min(100%, 500px);
 }
 
@@ -842,11 +843,6 @@ footer,
     justify-content: center;
   }
 
-  #data-visualization .card-image {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-
   .card-image img {
     max-width: min(100%, 260px);
   }
@@ -880,16 +876,6 @@ footer,
 
   #references h1 {
     font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 360px) {
-  #data-visualization .card-image {
-    grid-template-columns: 1fr;
-  }
-
-  #data-visualization .card-image img {
-    width: 100%;
   }
 }
 
