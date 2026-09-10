@@ -12,9 +12,9 @@ const observer = new IntersectionObserver((entries) => {
 
 cards.forEach(card => observer.observe(card));
 
-const header = document.querySelector('#header');
+const header = document.querySelector('#header, #site-header');
 const stickyNav = document.querySelector('#sticky-nav');
-const heroSection = document.querySelector('#header'); // your hero's header id
+const heroSection = header;
 
 const heroObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

@@ -50,6 +50,29 @@ body h3 {
     font-family: garamond, light; /* a classic, elegant font for the section text */
     line-height: 1.6;
 }
+
+#about-sdg2 .video-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#about-sdg2 .video-wrap h1 {
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+#about-sdg2 .video-wrap iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card-content iframe{
+  align-items: center;
+}
 #cause-and-effects {
     background-color: #e8e4c9;  /* a light, neutral background for the section */
     color: #2f3590;             /* dark text for contrast */
@@ -279,6 +302,10 @@ footer p {
     padding-bottom: 0px;
     margin-bottom: -15px;
 }
+#scientific-research .card-image{
+  height: 200px;
+  width: 350px;
+}
 #call-to-action {
     background-color: #e8e4c9;  /* a light, neutral background for the section */
     color: #2f3590;             /* dark text for contrast */
@@ -313,8 +340,46 @@ footer p {
 #references {
   background-color: #2f3590;
   color: #e8e4c9;
-  padding: 0px;
-  text-align: center;
+  padding: 20px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.references-left {
+  width: 30%;
+  min-width: 220px;
+  color: #e8e4c9;
+  text-align: left;
+}
+
+.references-left h2 {
+  font-family: trajan pro, regular;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.references-left ul {
+  font-family: garamond, light;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.references-left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+#references .card-text {
+  width: 60%;
+  max-width: 800px;
+  margin-left: auto;
+  text-align: left;
 }
 
 #references h1 {
@@ -324,6 +389,11 @@ footer p {
   font-size: 28px; /* slightly smaller than your main header, since this isn't the star of the page */
   position: relative;
   padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 #references h1::after {
@@ -340,8 +410,9 @@ footer p {
   list-style: none;
   padding: 0;
   max-width: 600px;
-  margin: 0 auto; /* centers the list block itself */
-  text-align: left; /* but keeps text readable, not centered per-line */
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
 }
 
 .ref-list li {
@@ -605,6 +676,7 @@ header.hero {
   margin: 32px auto 0;
   padding: clamp(24px, 4vw, 40px) clamp(18px, 4vw, 40px);
   transform: translateY(40px);
+  justify-content: right;
 }
 
 .card.visible {
