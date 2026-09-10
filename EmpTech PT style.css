@@ -38,7 +38,10 @@ body h3 {
     font-family: garamond, light; /* a classic, elegant font for the section text */
     line-height: 1.6;
 }
-
+#about-sdg2 dl {
+    font-family: garamond, light; /* a classic, elegant font for the section text */
+    line-height: 1.6;
+}
 #cause-and-effects {
     background-color: #e8e4c9;  /* a light, neutral background for the section */
     color: #2f3590;             /* dark text for contrast */
@@ -48,8 +51,6 @@ body h3 {
     height: 375px;
     border-radius: 10px;
     transform: translate(90px, 20px);
-    
-    
 }
 #cause-and-effects h1 {
     font-family: garamond, regular; /* a classic, elegant font for the section title */
@@ -58,28 +59,48 @@ body h3 {
     text-align: center;
     transform: translatey(-20px);
     margin-bottom: -10px;
+    vertical-align: text-top;
 }
 #cause-and-effects p {
     font-family: garamond, light; /* a classic, elegant font for the section text */
     line-height: 1.6;
 }
-    
+#cause-and-effects .card-image{
+    min-height: 300px;
+    min-width: 300px;
+    display: inline-flex;
+    gap: 20px;
+    flex-shrink: 0;
+    transform: translatey(70px)
+} 
+#cause-and-effects figcaption{
+  font-family: garamond, light;
+  font-size: 10px
+}
 footer {
     font-size: 10px;
     padding: 0px;
     margin-top:20px;
-
+}
+footer p {
+    font-family: garamond, light; 
+    line-height: 1.6;
+    transform: translatey(30px);
 }
 #ft2 {
     font-size: 10px;
     padding: 0px;
     margin-top: 30px;
-    transform: translatey(80px);
-
+    transform: translatey(200px);
+}
+#ft2 p {
+    font-family: garamond, light; 
+    line-height: 1.6;
+    transform: translatey(30px);
 }
 
 #data-visualization {
-    background-color: #e8e4c9;  /* a light, neutral background for the section */
+    background-color: #e8e4c9;  
     color: #2f3590;             /* dark text for contrast */
     padding: 40px 20px;
     text-align: justify;
@@ -105,7 +126,11 @@ footer {
     font-size: 10px;
     padding: 0px;
     margin-top: 20px;
-    transform: translatey(300px);
+}
+#ft3 p {
+    font-family: garamond, light; 
+    line-height: 1.6;
+    transform: translatey(15px);
 }
 .nav-list {
   display: flex;
@@ -189,9 +214,12 @@ footer {
     font-size: 10px;
     padding: 0px;
     margin-top: 20px;
-    transform: translatey(90px);
 }
-
+#ft4 p {
+    font-family: garamond, light; 
+    line-height: 1.6;
+    transform: translatey(15px);
+}
 #scientific-research {
     background-color: #e8e4c9;  /* a light, neutral background for the section */
     color: #2f3590;             /* dark text for contrast */
@@ -308,7 +336,11 @@ footer {
     font-size: 10px;
     padding: 0px;
     margin-top: 20px;
-    transform: translatey(90px);
+}
+#ft5 p {
+    font-family: garamond, light; 
+    line-height: 1.6;
+    transform: translatey(15px);
 }
 body {
   transition: opacity 0.5s ease;
