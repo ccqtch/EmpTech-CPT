@@ -2,13 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
-#site-header {
-  background-color: #2f3590;  /* a bold, attention-grabbing header color */
+
+}
+#site-header {  
   color: #ffffff;             /* white text for contrast */
   padding: 30px;
-  text-align: center;
-  font-family: trajan pro, regular; /* a strong, professional font for the header */
+  text-align: left;
+  font-family: trajan pro, regular; 
+  background-image: url("bg.png");
 }
 body h3 {
   font-family: trajan pro, light; /* a slightly friendlier
@@ -387,8 +395,11 @@ body.fade-out {
 header.hero {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(135deg, #2f3590, #4a4fb5);
+  min-height: 100vh;
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
