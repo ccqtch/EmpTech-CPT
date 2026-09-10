@@ -69,7 +69,10 @@ body h3 {
   margin: 0 auto;
   max-width: 100%;
 }
-
+.video-wrap p{
+  font-family: garamond, light;
+  font-size: 10px;
+}
 .card-content iframe{
   align-items: center;
 }
